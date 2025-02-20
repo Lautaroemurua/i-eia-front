@@ -1,0 +1,16 @@
+// shared/components/header/header.component.css
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+}
+button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}

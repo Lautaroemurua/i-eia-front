@@ -1,0 +1,153 @@
+/* Reset básico y estilos globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+/* Estilos para el modo oscuro */
+.dark-mode {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+/* Estilos para componentes comunes */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+input {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+/* Variables de colores */
+:root {
+  --primary-color: #007BFF;
+  --dark-color: #343A40;
+  --light-color: #F8F9FA;
+  --danger-color: #DC3545;
+  --warning-color: #FFC107;
+}
+
+/* Estilo global del body */
+body {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  transition: background 0.3s ease-in-out;
+}
+
+/* Estilos globales de botones */
+button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: var(--dark-color);
+}
+
+/* Clases reutilizables */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Estilo de tarjetas */
+.card {
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Animaciones Globales */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+/* Clases de animación */
+.fade-in { animation: fadeIn 0.5s ease-in-out; }
+.slide-up { animation: slideUp 0.6s ease-in-out; }
+.bounce { animation: bounce 0.4s ease-in-out infinite alternate; }
+
+/* Efecto Hover en Botones */
+button:hover {
+  transform: scale(1.05);
+}
+
+/* Entrada de la Ventana de Chat */
+.chat-window {
+  animation: slideUp 0.5s ease-in-out;
+}
+:root {
+  --primary-color: #007bff;
+  --light-color: #f8f9fa;
+  --dark-color: #343a40;
+  --warning-color: #ff9800;
+}
+
+.dark-mode {
+  --primary-color: #1e88e5;
+  --light-color: #222;
+  --dark-color: #f8f9fa;
+  --warning-color: #ffca28;
+}
